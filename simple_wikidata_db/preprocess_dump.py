@@ -5,7 +5,7 @@ This script preprocesses the raw Wikidata dump (in JSON format) and sorts triple
 Example command:
 
 python3 preprocess_dump.py \
-    --input_file /lfs/raiders8/0/lorr1/wikidata/raw_data/latest-all.json.gz \
+    --input_file /lfs/raiders8/0/lorr1/wikidata/raw_data/latest-all.json.bz2 \
     --out_dir data/processed
 
 """
@@ -22,7 +22,7 @@ from simple_wikidata_db.preprocess_utils.writer_process import write_data
 
 def get_arg_parser():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--input_file', type=str, required=True, help='path to gz wikidata json dump')
+    parser.add_argument('--input_file', type=str, required=True, help='path to bz2 wikidata json dump')
     parser.add_argument('--out_dir', type=str, required=True, help='path to output directory')
     parser.add_argument('--language_id', type=str, default='en', help='language identifier')
     parser.add_argument('--processes', type=int, default=90, help="number of concurrent processes to spin off. ")

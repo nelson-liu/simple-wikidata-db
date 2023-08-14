@@ -13,11 +13,11 @@ This library is helpful if you'd like to issue queries like:
 
 A full list of available dumps is available [here](https://dumps.wikimedia.org/wikidatawiki/entities/). To fetch the most recent dump, run: 
 ```
-wget https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
+wget https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2
 ``` 
 or, if aria2c is installed, run: 
 ```
-aria2c --max-connection-per-server 16 https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.gz
+aria2c --max-connection-per-server 16 https://dumps.wikimedia.org/wikidatawiki/entities/latest-all.json.bz2
 ```
 
 Downloading takes about 2-5 hours (depending on bandwidth).
