@@ -1,0 +1,8 @@
+[project]
+name = "simple_wikidata_db"
+description = "Simple database for Wikidata"
+version = "0.0.0"
+dependencies = [
+    "ujson==5.1.0",
+    "pathlib==1.0.1"
+]
